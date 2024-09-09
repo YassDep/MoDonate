@@ -1,0 +1,200 @@
+body {
+    background-color: #fbf8f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    padding-top: 5%;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin: 10px 0 20px;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inline-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.inline-fields .field {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .inline-fields {
+        flex-direction: row;
+    }
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label,
+.new-card label {
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.remove-card {
+    background-color: #ff4c4c;
+}
+
+.remove-card:hover {
+    background-color: #d94444;
+}
+
+.saved-cards {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.saved-cards .card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.saved-cards .card img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.saved-cards .card input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.saved-cards .card a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.saved-cards .card a:hover {
+    text-decoration: underline;
+}
+
+.new-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .card-details {
+        flex-direction: row;
+    }
+}
+
+.footer {
+    margin-top: auto;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fbf8f2;
+}
+
+/* Logo Styles */
+.logo-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo {
+    width: 120px;
+    top: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+}
